@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajout d'un padding pour éviter que le contenu touche les bords */
+    background-color: rgb(219, 202, 202);
+}
+
+/* Style du conteneur du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px; /* Largeur maximale */
+    width: 90%; /* Largeur relative pour les petits écrans */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin: auto; /* centre le formulaire */
+    box-sizing: border-box;
+    margin-top: 5%;
+    background: #f0f0f0;
+    box-shadow: -5px 5px 9px rgb(173, 138, 138), 5px -5px 9px rgb(218, 191, 191);
+}
+
+/* Style des étiquettes (labels) */
+form label {
+    font-size: 1rem; /* Utilisation de rem pour la taille de police */
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style des champs de saisie */
+form input.inputs {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    transition: border 0.3s ease;
+}
+
+/* Effet au focus sur les champs de saisie */
+form input.inputs:focus {
+    border-color: royalblue;
+}
+
+/* Style du bouton de soumission */
+form input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem; /* Utilisation de rem pour la taille de police */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton de soumission */
+form input[type="submit"]:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+/* Style du paragraphe contenant le lien de connexion */
+form p {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 0.875rem; /* Utilisation de rem pour la taille de police */
+    text-align: center;
+}
+
+/* Style du lien dans le paragraphe */
+form p a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+/* Effet au survol du lien */
+form p a:hover {
+    text-decoration: underline;
+}
+
+legend {
+    margin-bottom: 2%;
+    color: royalblue;
+    font-size: larger;
+}
+
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 600px) {
+    form {
+        width: 95%; /* Augmente la largeur pour les petits écrans */
+        padding: 15px; /* Réduit le padding */
+    }
+
+    form label {
+        font-size: 0.9rem; /* Réduit la taille de la police */
+    }
+
+    form input[type="submit"] {
+        font-size: 0.9rem; /* Réduit la taille de la police */
+    }
+
+    form p {
+        font-size: 0.8rem; /* Réduit la taille de la police */
+    }
+}

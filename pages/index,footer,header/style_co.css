@@ -1,0 +1,83 @@
+
+*{
+    box-sizing: border-box;
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(219, 202, 202); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prend ²toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+legend {
+    font-size: larger;
+    font-weight: bolder;
+    color: blue;
+    text-align: center; /* Centrer le texte */
+}
+
+form {
+    margin: 0; /* Supprime la marge pour le champ */
+    width: 90%; /* Largeur relative pour les petits écrans */
+    max-width: 400px; /* Largeur maximale */
+    padding: 20px; /* Padding pour le champ */
+    border-radius: 10px; /* Arrondir les coins */
+    background: #f0f0f0;
+    box-shadow: -5px 5px 9px rgb(173, 138, 138), 5px -5px 9px rgb(218, 191, 191);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espace entre les éléments */
+}
+
+.inputs {       
+    height: 40px; /* Hauteur des champs d'entrée */
+    width: 100%; /* Prend toute la largeur du conteneur */
+    padding: 10px; /* Padding interne pour le champ */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+    margin-bottom: 15px; /* Espace entre les champs */
+}
+
+#submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem; /* Utilisation de rem pour la taille de police */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+legend{
+    color: royalblue;
+    margin-bottom: 3%;
+}
+
+p a {
+    text-decoration: none;
+    color: blue; /* Couleur du lien */
+}
+
+p {
+    margin-top: 20px; /* Espace au-dessus du paragraphe */
+    text-align: center;
+    font-size: 14px; /* Taille de la police */
+}
